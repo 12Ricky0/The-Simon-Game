@@ -16,15 +16,17 @@ $(document).keydown(function (event) {
     }
 })
 
-$(document).click(() => {
-    if (!start) {
-        $("h1").html("Level " + level)
+// $(document).click(function (event) {
+//     if (!start) {
 
-        nextSequence();
-        start = true
+//         nextSequence();
+//         start = true
 
-    }
-})
+//         $("h1").html("Level " + level)
+
+
+//     }
+// })
 
 
 $(".btn").click(function (event) {
