@@ -16,6 +16,16 @@ $(document).keydown(function (event) {
     }
 })
 
+$(document).click(() => {
+    if (!start) {
+        $("h1").html("Level " + level)
+
+        nextSequence();
+        start = true
+
+    }
+})
+
 
 $(".btn").click(function (event) {
     var userChosenColor = this.id;
